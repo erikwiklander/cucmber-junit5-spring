@@ -13,7 +13,7 @@ public class DemoApplication {
 
     @Bean
     public String test() {
-        return "jerka";
+        return "test string";
     }
 
 }

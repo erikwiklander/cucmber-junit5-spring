@@ -13,7 +13,8 @@ public class StepDefsIntegrationTest extends DemoApplicationTests {
 
     @When("^the client calls /baeldung$")
     public void the_client_issues_POST_hello() throws Throwable {
-        //
+        String login = loginService.login();
+        assertThat(login).isEqualTo("ok");
     }
 
     @Given("^the client calls /hello$")

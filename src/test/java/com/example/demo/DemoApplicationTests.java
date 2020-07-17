@@ -14,4 +14,7 @@ class DemoApplicationTests {
     @Autowired
     String test;
 
+    @Autowired
+    LoginService loginService;
+
 }
